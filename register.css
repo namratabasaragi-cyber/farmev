@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+    color: #333;
+}
+
+
+
+.register-hero {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1b5e20, #66bb6a);
+    padding: 40px 20px;
+}
+
+.register-hero-content {
+    text-align: center;
+    max-width: 900px;
+    padding: 40px 50px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+}
+
+.hero-title {
+    font-size: 44px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.hero-subtitle {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #e8f5e9;
+}
+
+.hero-stats {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.stat h3 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.stat span {
+    font-size: 14px;
+    color: #d7f5d7;
+}
+
+
+
+.register-section {
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    background: #fff;
+    width: 100%;
+    max-width: 720px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+}
+
+.register-form h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+.form-subtitle {
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0 30px;
+    color: #555;
+}
+
+.register-form label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+
+.checkbox {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.checkbox a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.register-form button {
+    margin-top: 28px;
+    width: 100%;
+    padding: 15px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-form button:hover {
+    background: #1b5e20;
+}
+
+
+.login-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #2e7d32;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .register-form {
+        padding: 28px;
+    }
+}

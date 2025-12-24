@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7f6;
+    color: #333;
+}
+
+
+
+.sell-hero {
+    min-height: 300px;
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sell-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: #f5f7f6;
+    border-radius: 50% 50% 0 0;
+}
+
+.sell-hero-content {
+    z-index: 2;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.sell-hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.sell-hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.hero-stats div h3 {
+    font-size: 28px;
+}
+
+.hero-stats span {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+    .sell-hero h1 { font-size: 32px; }
+    .hero-stats { flex-direction: column; gap: 15px; }
+}
+
+
+/* Crops */
+.crop-section {
+    padding: 40px;
+}
+
+.crop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Crop Card */
+.crop-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.crop-card:hover {
+    transform: translateY(-6px);
+}
+
+.crop-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.crop-card h3 {
+    margin: 12px 0 5px;
+    color: #2e7d32;
+}
+
+.offer {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Price controls */
+.price-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.price-controls button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Deal badge */
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: orange;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+/* Analysis */
+.analysis {
+    padding: 40px;
+    max-width: 700px;
+    margin: auto;
+}
+/* ===== ANIMATED SELL HERO ===== */
+.sell-hero {
+    min-height: 340px;
+    background: linear-gradient(135deg, #2e7d32, #66bb6a);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Curved bottom like modern dashboards */
+.sell-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background: #f5f7f6;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(135deg, #1b5e20, #66bb6a);
+
+}
+
+/* Content */
+.sell-hero-content {
+    text-align: center;
+    z-index: 5; /* bring content to top */
+    max-width: 900px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.15); /* contrast layer */
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+}
+
+
+/* TEXT ANIMATIONS (HOME PAGE STYLE) */
+.hero-title {
+    font-size: 50px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: titlePop 1s ease forwards;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: subtitlePop 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+/* STATS */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 35px;
+    opacity: 0;
+    animation: statsFade 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+.stat h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.stat span {
+    font-size: 14px;
+    color: #e8f5e9;
+    font-weight: 500;
+}
+
+
+/* FLOATING SIDE DECORATIONS */
+.leaf {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+}
+
+.leaf-left {
+    left: 5%;
+    top: 40%;
+}
+
+.leaf-right {
+    right: 5%;
+    top: 30%;
+    animation-delay: 2s;
+}
+
+/* Soft floating circles */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    animation: float 8s ease-in-out infinite;
+}
+
+.circle-1 {
+    width: 140px;
+    height: 140px;
+    left: 10%;
+    top: 15%;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    right: 8%;
+    bottom: 20%;
+    animation-delay: 3s;
+}
+
+/* ANIMATIONS */
+@keyframes titlePop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes subtitlePop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes statsFade {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .leaf,
+    .circle {
+        display: none;
+    }
+}
+.leaf,
+.circle {
+    z-index: 1;
+    pointer-events: none;
+}

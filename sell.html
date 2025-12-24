@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Crops | FarmWeave</title>
+    <link rel="stylesheet" href="sell.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="sell.js" defer></script>
+</head>
+<body>
+
+<header class="sell-hero">
+    <!-- Floating decorative elements -->
+    <div class="leaf leaf-left">🌿</div>
+    <div class="leaf leaf-right">🍃</div>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
+    <div class="sell-hero-content">
+        <h1 class="hero-title">🌾 Your Crop Marketplace</h1>
+        <p class="hero-subtitle">
+            Control prices • Boost profits • Track your yield smartly
+        </p>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>25+</h3>
+                <span>Crops Listed</span>
+            </div>
+            <div class="stat">
+                <h3>1.2kg</h3>
+                <span>Kg Sold</span>
+            </div>
+            <div class="stat">
+                <h3>₹5k</h3>
+                <span>Total Earnings</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="crop-section">
+    <div class="crop-grid">
+
+        <div class="crop-card deal">
+            <img src="tomato.jpg">
+            <h3>Tomato</h3>
+            <p class="offer">Offer: ₹25/kg</p>
+            <div class="price-controls">
+                <button>-</button><span>₹30</span><button>+</button>
+            </div>
+            <span class="badge">Today’s Deal</span>
+        </div>
+
+        <div class="crop-card"><img src="potato.jpg"><h3>Potato</h3><p class="offer">₹18/kg</p><div class="price-controls"><button>-</button><span>₹22</span><button>+</button></div></div>
+        <div class="crop-card"><img src="onion.jpg"><h3>Onion</h3><p class="offer">₹20/kg</p><div class="price-controls"><button>-</button><span>₹26</span><button>+</button></div></div>
+        <div class="crop-card"><img src="carrot.jpg"><h3>Carrot</h3><p class="offer">₹30/kg</p><div class="price-controls"><button>-</button><span>₹35</span><button>+</button></div></div>
+        <div class="crop-card"><img src="cabbage.jpg"><h3>Cabbage</h3><p class="offer">₹16/kg</p><div class="price-controls"><button>-</button><span>₹20</span><button>+</button></div></div>
+        <div class="crop-card"><img src="beans.jpg"><h3>Beans</h3><p class="offer">₹40/kg</p><div class="price-controls"><button>-</button><span>₹45</span><button>+</button></div></div>
+
+        <div class="crop-card"><img src="brinjal.jpg"><h3>Brinjal</h3><p class="offer">₹30/kg</p><div class="price-controls"><button>-</button><span>₹35</span><button>+</button></div></div>
+        <div class="crop-card"><img src="lady finger.jpg"><h3>Lady Finger</h3><p class="offer">₹32/kg</p><div class="price-controls"><button>-</button><span>₹36</span><button>+</button></div></div>
+        <div class="crop-card"><img src="spinach.jpg"><h3>Spinach</h3><p class="offer">₹15/kg</p><div class="price-controls"><button>-</button><span>₹18</span><button>+</button></div></div>
+        <div class="crop-card"><img src="methi.jpg"><h3>Methi</h3><p class="offer">₹20/kg</p><div class="price-controls"><button>-</button><span>₹24</span><button>+</button></div></div>
+        <div class="crop-card"><img src="coriander.jpg"><h3>Coriander</h3><p class="offer">₹12/kg</p><div class="price-controls"><button>-</button><span>₹15</span><button>+</button></div></div>
+
+        <div class="crop-card"><img src="capsicum.jpg"><h3>Capsicum</h3><p class="offer">₹40/kg</p><div class="price-controls"><button>-</button><span>₹45</span><button>+</button></div></div>
+        <div class="crop-card"><img src="green chilli.jpg"><h3>Green Chilli</h3><p class="offer">₹50/kg</p><div class="price-controls"><button>-</button><span>₹55</span><button>+</button></div></div>
+        <div class="crop-card"><img src="beetroot.jpg"><h3>Beetroot</h3><p class="offer">₹28/kg</p><div class="price-controls"><button>-</button><span>₹32</span><button>+</button></div></div>
+        <div class="crop-card"><img src="radish.jpg"><h3>Radish</h3><p class="offer">₹22/kg</p><div class="price-controls"><button>-</button><span>₹26</span><button>+</button></div></div>
+        <div class="crop-card"><img src="peas.jpg"><h3>Peas</h3><p class="offer">₹38/kg</p><div class="price-controls"><button>-</button><span>₹42</span><button>+</button></div></div>
+
+        <div class="crop-card"><img src="pumpkin.jpg"><h3>Pumpkin</h3><p class="offer">₹18/kg</p><div class="price-controls"><button>-</button><span>₹22</span><button>+</button></div></div>
+        <div class="crop-card"><img src="bottle gourd.jpg"><h3>Bottle Gourd</h3><p class="offer">₹20/kg</p><div class="price-controls"><button>-</button><span>₹24</span><button>+</button></div></div>
+        <div class="crop-card"><img src="bitter gourd.jpg"><h3>Bitter Gourd</h3><p class="offer">₹35/kg</p><div class="price-controls"><button>-</button><span>₹40</span><button>+</button></div></div>
+        <div class="crop-card"><img src="drumstick.jpg"><h3>Drumstick</h3><p class="offer">₹45/kg</p><div class="price-controls"><button>-</button><span>₹50</span><button>+</button></div></div>
+        <div class="crop-card"><img src="sweet corn.jpg"><h3>Sweet Corn</h3><p class="offer">₹30/kg</p><div class="price-controls"><button>-</button><span>₹35</span><button>+</button></div></div>
+
+        <div class="crop-card"><img src="garlic.jpg"><h3>Garlic</h3><p class="offer">₹90/kg</p><div class="price-controls"><button>-</button><span>₹100</span><button>+</button></div></div>
+        <div class="crop-card"><img src="ginger.jpg"><h3>Ginger</h3><p class="offer">₹70/kg</p><div class="price-controls"><button>-</button><span>₹80</span><button>+</button></div></div>
+
+    </div>
+</section>
+
+<section class="analysis">
+    <h3>📊 Monthly Yield Analysis</h3>
+    <canvas id="yieldChart"></canvas>
+</section>
+
+</body>
+</html>
